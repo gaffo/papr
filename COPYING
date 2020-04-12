@@ -1,0 +1,1 @@
+The licensing of the various sub trees are specified in their COPYING files. If any folder in the tree has a COPYING file it overrides any one at a higher level in the tree and applys down unless there is a deeper overriding file.
