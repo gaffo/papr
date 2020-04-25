@@ -1,5 +1,6 @@
 #include <TimerOne.h>
 #include <AutoPID.h>
+//#include <Arduino_DebugUtils.h>
 
 int fanPin = 9;
 int rpmFan = 2;
@@ -16,11 +17,12 @@ void setup() {
   pinMode(fanPin, OUTPUT);
   pinMode(rpmFan, INPUT_PULLUP);
   lastSample = millis();
-  attachInterrupt(digitalPinToInterrupt(rpmFan), rpmPulse, HIGH);
+  attachInterrupt(digitalPinToInterrupt(rpmFan), rpmPulse, RISING);
   
   // setup PWM Module
   Timer1.initialize(40);
   Serial.begin(9600);
+//  Debug.timestampOn();
   while (!Serial) {
     ; // wait for serial port to connect. Needed for native USB port only
   }
@@ -29,10 +31,9 @@ void setup() {
 void loop() {
   delay(100);
   Serial.println(rpmPulses);
-//  float delta = float(millis() - lastSample);
-//  Serial.println(delta);
-//  double rpm = (rpmPulses / delta) / 1000.0 / 60.0;
-//  Serial.println(rpm);
+  long delta = long(millis() - lastSample);
+
+  double rpMs = (rpmPulses / double(delta)); // to minutes
   rpmPulses = 0;
   lastSample = millis();
   
