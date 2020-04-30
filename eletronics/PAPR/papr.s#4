@@ -893,7 +893,7 @@ temperature compensated, 6,2 V</description>
 <attribute name="VALUE" x="119.38" y="81.28" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="X_1" gate="G$1" x="124.46" y="40.64" smashed="yes"/>
-<instance part="R1" gate="G$1" x="-30.48" y="38.1" smashed="yes"/>
+<instance part="R1" gate="G$1" x="5.08" y="55.88" smashed="yes" rot="R90"/>
 </instances>
 <busses>
 </busses>
