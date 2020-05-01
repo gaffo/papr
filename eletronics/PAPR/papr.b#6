@@ -584,18 +584,15 @@ design rules under a new name.</description>
 <vertex x="48.26" y="0"/>
 <vertex x="48.26" y="44.45"/>
 </polygon>
-<wire x1="36.83" y1="20.32" x2="33.02" y2="12.7" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="12V">
 <contactref element="ARDUINO_NANO1" pad="15"/>
 <contactref element="JP_FAN" pad="1"/>
 <contactref element="PS1" pad="3"/>
-<wire x1="35.56" y1="12.7" x2="35.56" y2="16.51" width="0.1524" layer="1"/>
-<wire x1="35.56" y1="16.51" x2="39.37" y2="20.32" width="0.1524" layer="1"/>
-<wire x1="35.56" y1="12.7" x2="33.02" y2="15.24" width="0.1524" layer="1"/>
-<wire x1="33.02" y1="15.24" x2="25.4" y2="15.24" width="0.1524" layer="1"/>
-<wire x1="25.4" y1="15.24" x2="22.86" y2="12.7" width="0.1524" layer="1"/>
-<wire x1="22.86" y1="12.7" x2="22.86" y2="2.54" width="0.1524" layer="1"/>
+<wire x1="39.37" y1="20.32" x2="39.37" y2="16.51" width="0.1524" layer="16"/>
+<wire x1="39.37" y1="16.51" x2="35.56" y2="12.7" width="0.1524" layer="16"/>
+<wire x1="35.56" y1="12.7" x2="25.4" y2="2.54" width="0.1524" layer="16"/>
+<wire x1="25.4" y1="2.54" x2="22.86" y2="2.54" width="0.1524" layer="16"/>
 </signal>
 <signal name="FAN_PWM">
 <contactref element="ARDUINO_NANO1" pad="27"/>
@@ -636,6 +633,18 @@ design rules under a new name.</description>
 <contactref element="PS1" pad="1"/>
 <contactref element="JP_PWR" pad="1"/>
 <wire x1="30.48" y1="2.54" x2="30.48" y2="12.7" width="0.1524" layer="1"/>
+</signal>
+<signal name="N$3">
+<wire x1="40.64" y1="16.92185" x2="40.64" y2="16.51" width="0.1524" layer="1"/>
+<wire x1="40.0332" y1="17.78" x2="40.0332" y2="17.52865" width="0.1524" layer="1"/>
+<wire x1="40.0332" y1="17.52865" x2="40.64" y2="16.92185" width="0.1524" layer="1"/>
+</signal>
+<signal name="N$2">
+<wire x1="40.15945625" y1="18.0848" x2="39.90694375" y2="18.0848" width="0.1524" layer="1"/>
+<wire x1="40.64" y1="17.78" x2="40.46425625" y2="17.78" width="0.1524" layer="1"/>
+<wire x1="39.60214375" y1="17.78" x2="38.1" y2="17.78" width="0.1524" layer="1"/>
+<wire x1="40.46425625" y1="17.78" x2="40.15945625" y2="18.0848" width="0.1524" layer="1"/>
+<wire x1="39.90694375" y1="18.0848" x2="39.60214375" y2="17.78" width="0.1524" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
